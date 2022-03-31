@@ -23,13 +23,29 @@ public class EmployeePay {
             System.out.println("Employee wage per day = " + Total_Working_Hrs * Wage_Per_Hour);
         }
     }
-    static void partTimeEmployee() {
 
+    static void partTimeEmployee() {
         double empCheck = Math.floor((Math.random() * 10) % 3);
         if (present == empCheck) {
             System.out.println("Employee wage per day = " + Total_Working_Hrs * Wage_Per_Hour);
         } else if (PART_TIME == empCheck) {
             System.out.println("Employee is Working in Partime wage is =" + Part_Time_Working_Hrs * Wage_Per_Hour);
+        }
+    }
+
+    static void empWageSwitchCase() {
+        int emp_check = (int) Math.floor((Math.random() * 10) % 2 + 1);
+        switch (emp_check) {
+            case present:
+                System.out.println("Employee Working in Full Time");
+                System.out.println("Employee Wage is =" + Wage_Per_Hour * Total_Working_Hrs);
+                break;
+            case PART_TIME:
+                System.out.println("Employee Working in Part Time");
+                System.out.println("Employee Wage is = " + Wage_Per_Hour * Part_Time_Working_Hrs;
+                break;
+            default:
+                System.out.println("Employee is Absent");
         }
     }
 
