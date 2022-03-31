@@ -5,6 +5,8 @@ public class EmployeePay {
     static int present = 1;
     static int Wage_Per_Hour = 20;
     static int Total_Working_Hrs = 8;
+    static int PART_TIME = 2;
+    static int Part_Time_Working_Hrs = 4;
 
     static void attendanceOfEmployee() {
         double empCheck = Math.floor((Math.random() * 10) % 2);
@@ -19,6 +21,15 @@ public class EmployeePay {
         double empCheck = Math.floor((Math.random() * 10) % 1 + 1);
         if (present == empCheck) {
             System.out.println("Employee wage per day = " + Total_Working_Hrs * Wage_Per_Hour);
+        }
+    }
+    static void partTimeEmployee() {
+
+        double empCheck = Math.floor((Math.random() * 10) % 3);
+        if (present == empCheck) {
+            System.out.println("Employee wage per day = " + Total_Working_Hrs * Wage_Per_Hour);
+        } else if (PART_TIME == empCheck) {
+            System.out.println("Employee is Working in Partime wage is =" + Part_Time_Working_Hrs * Wage_Per_Hour);
         }
     }
 
