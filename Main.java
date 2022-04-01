@@ -14,6 +14,7 @@ public class Main {
         System.out.println("4.Wage Calculation Using Switch Case");
         System.out.println("5.Employee Wage for 20 Days");
         System.out.println("6.Employee Monthly Wage");
+        System.out.println("7.Employee Monthly Wage For a Particular Company");
         System.out.println("Enter the choice: ");
         int choice = input.nextInt();
 
@@ -35,6 +36,9 @@ public class Main {
                 break;
             case 6:
                 employeeWageMonthly();
+                break;
+            case 7:
+                calculateEmpWageForCompany("DMart", 20,20,100);
                 break;
         }
     }
