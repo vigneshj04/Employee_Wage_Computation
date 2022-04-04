@@ -112,6 +112,7 @@ public class EmployeePay {
         }
         System.out.println("Total Wage : " + totalWage);
     }
+
     public static int calculateEmpWageForCompany(String company, int empRate, int numOfDays, int maxHrs) {
         final int IS_PART_TIME = 1;
         final int IS_FULL_TIME = 2;
@@ -142,10 +143,9 @@ public class EmployeePay {
             totalWage += empWage;
             System.out.println("Emp wage = " + empWage);
         }
-        System.out.println("Total Wage for Company : "+company +" " + totalWage);
+        System.out.println("Total Wage for Company : " + company + "is " + totalWage);
         return totalWage;
     }
-
 }
 
 
